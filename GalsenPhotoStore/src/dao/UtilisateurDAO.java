@@ -53,11 +53,11 @@ public class UtilisateurDAO {
 		return userfind;
 	}
 */
-	private static final String INSERT_USER_PREPARED = "INSERT INTO ga_utilisateur VALUES (0, ?, ?, ?, ?, ?)";
-	private static final String UPDATE_USER_PREPARED = "UPDATE ga_utilisateur SET prenom = ?, nom = ?, password= ? WHERE login = ?";
-	private static final String DELETE_USER_PREPARED = "DELETE FROM ga_utilisateur WHERE login = ?";
-	private static final String SELECT_USER_BY_LOGIN_PREPARED = "SELECT * FROM ga_utilisateur WHERE login = ?";
-	private static final String SELECT_USER_BY_LOGIN_PASS_PREPARED = "SELECT * FROM ga_utilisateur WHERE login = ? and password = ?";
+	private static final String INSERT_USER_PREPARED = "INSERT INTO users VALUES (0, ?, ?, ?, ?, ?)";
+	private static final String UPDATE_USER_PREPARED = "UPDATE users SET prenom = ?, nom = ?, password= ? WHERE login = ?";
+	private static final String DELETE_USER_PREPARED = "DELETE FROM users WHERE login = ?";
+	private static final String SELECT_USER_BY_LOGIN_PREPARED = "SELECT * FROM users WHERE login = ?";
+	private static final String SELECT_USER_BY_LOGIN_PASS_PREPARED = "SELECT * FROM users WHERE login = ? and password = ?";
 
 	public static void ajouter(Utilisateur utilisateur)  {
 		PreparedStatement preparedStatement;
