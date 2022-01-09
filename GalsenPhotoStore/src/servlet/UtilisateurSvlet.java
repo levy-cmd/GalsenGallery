@@ -65,7 +65,6 @@ public class UtilisateurSvlet extends HttpServlet {
 			if (requestedUrl.equals("/user/create")) {
 				getServletContext().getRequestDispatcher(VUE_SIGNIN).forward(request, response);
 			} else if (requestedUrl.equals("/user/connect")) {
-				request.setAttribute(ATT_FORM_ERROR, error);
 				getServletContext().getRequestDispatcher(VUE_LOGIN).forward(request, response);
 			} else if (requestedUrl.equals("/user")) {
 				request.setAttribute("imagesPublics", ImageDAO.imagePublics());
@@ -133,7 +132,7 @@ public class UtilisateurSvlet extends HttpServlet {
 					response.sendRedirect(request.getContextPath() + "/user");
 
 				} else {
-					error = new FormErreur("Login ou mot de pass incorrect!");
+					//error = new FormErreur("Login ou mot de pass incorrect!");
 					response.sendRedirect(request.getContextPath() + "/user/connect");
 				}
 			} else if (requestedUrl.equals("/user/create")) {
