@@ -38,8 +38,8 @@
 					<li><a href="#">Contact</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="<%= APP_ROOT %>/signup">Sign Up</a></li>
-					<li><a href="<%= APP_ROOT %>/signin">Login</a></li>
+					<li><a href="<%= APP_ROOT %>/user/create">Sign Up</a></li>
+					<li><a href="<%= APP_ROOT %>/user/connect">Login</a></li>
 				</ul>
 			</div>
 		</div>
